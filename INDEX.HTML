@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Weather</title>
+    <link rel="stylesheet" href="./STYLE.CSS">
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">SKYCAST</p>
+                <h1>Weather Dashboard</h1>
+            </div>
+
+            <form id="searchForm" class="search">
+                <input id="cityInput" type="search" placeholder="Enter a city..." required>
+                <button type="submit">Search</button>
+            </form>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div>
+                    <p class="label">CURRENT WEATHER</p>
+                    <h2 id="city">Search for a city</h2>
+                    <p id="date">--</p>
+
+                    <div class="temperature">
+                        <span id="temp">--</span><sup>°C</sup>
+                    </div>
+                    <p id="condition" class="condition">--</p>
+                    <p>Feels like <strong id="feels">--</strong>°C</p>
+                </div>
+
+                <div class="weather-symbol" id="weatherSymbol">☁️</div>
+            </section>
+
+            <section class="quick-grid">
+                <article><span>💧</span><p>Humidity</p><strong id="humidity">--</strong>%</article>
+                <article><span>💨</span><p>Wind</p><strong id="wind">--</strong> km/h</article>
+                <article><span>🌡️</span><p>Pressure</p><strong id="pressure">--</strong> hPa</article>
+                <article><span>☁️</span><p>Cloud Cover</p><strong id="cloud">--</strong>%</article>
+            </section>
+
+            <section class="panel">
+                <div class="panel-title">
+                    <h2>Next Hours</h2>
+                    <span>5-hour outlook</span>
+                </div>
+                <div id="hourly" class="horizontal-list">
+                    <p class="muted">Search a city to load the forecast.</p>
+                </div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-title">
+                    <h2>5-Day Forecast</h2>
+                    <span>Daily outlook</span>
+                </div>
+                <div id="daily" class="daily-list"></div>
+            </section>
+
+            <div class="two-column">
+                <section class="panel">
+                    <div class="panel-title"><h2>Sun Schedule</h2></div>
+                    <div class="sun-times">
+                        <div><span>🌅</span><p>Sunrise</p><strong id="sunrise">--:--</strong></div>
+                        <div><span>🌇</span><p>Sunset</p><strong id="sunset">--:--</strong></div>
+                    </div>
+                </section>
+
+                <section class="panel">
+                    <div class="panel-title"><h2>Air Quality</h2></div>
+                    <div class="air-box">
+                        <div><strong id="aqi">--</strong><span>European AQI</span></div>
+                        <p>PM2.5 <b id="pm25">--</b> μg/m³</p>
+                        <p>PM10 <b id="pm10">--</b> μg/m³</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>SkyCast • Weather information powered by Open-Meteo</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
