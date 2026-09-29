@@ -4,23 +4,23 @@
     padding: 0;
 }
 
-:root {
-    --background: #eef4ff;
-    --surface: #ffffff;
-    --primary: #3157d5;
-    --primary-dark: #203fa8;
-    --text: #17213c;
-    --muted: #71809d;
-    --line: #e2e8f4;
-    --soft: #f5f7fc;
-    --radius: 22px;
+:root{
+    --background:#bed7f0;
+    --surface:#d8d8d8;
+    --primary:#0a2153;
+    --primary-dark:#192e68;
+    --text:#0f172a;
+    --muted:#64748b;
+    --line:#006efd;
+    --soft:#010509;
+    --radius:16px;
 }
 
-body {
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text);
-    background: linear-gradient(145deg, #dce8ff, var(--background));
+body{
+    min-height:100vh;
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:var(--background);
 }
 
 .app {
@@ -79,17 +79,9 @@ button {
 button:hover {
     background: var(--primary-dark);
 }
-
-.hero {
-    min-height: 300px;
-    border-radius: var(--radius);
-    padding: 34px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(135deg, #2548bd, #5b7ff0);
-    box-shadow: 0 18px 40px rgba(42, 73, 170, .22);
+.hero{
+    min-height:220px;
+    padding:32px;
 }
 
 .label {
@@ -124,10 +116,9 @@ button:hover {
     font-size: 20px;
     font-weight: 700;
 }
-
-.weather-symbol {
-    font-size: 105px;
-    filter: drop-shadow(0 10px 12px rgba(0,0,0,.15));
+.weather-symbol{
+    font-size:70px;
+    opacity:.9;
 }
 
 .quick-grid {
